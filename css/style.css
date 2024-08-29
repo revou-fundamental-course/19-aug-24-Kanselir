@@ -1,0 +1,176 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+header .logo {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+header nav {
+    display: inline-block;
+    float: right;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Welcome Banner & Profile Banner */
+.welcome-banner, .profile-banner {
+    text-align: center;
+    padding: 2rem;
+    background: #f4f4f4;
+}
+
+.welcome-banner img {
+    border-radius: 50%;
+}
+
+.banner-placeholder {
+    width: 100%;
+    height: 300px;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Facilitation Section */
+.facilitation {
+    text-align: center;
+    padding: 2rem;
+}
+
+.facility {
+    display: inline-block;
+    margin: 20px;
+}
+
+.circle img {
+    width: 100px;
+    height: 100px;
+    background: #ddd;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* About & Vision & Mission Sections */
+
+/* .section {
+    display: flex;
+    flex-direction: column;
+} */
+
+.about, .vision-mission {
+    padding: 2rem;
+    text-align: center;
+}
+
+.vision, .mission {
+    padding: 1rem 0;
+}
+
+.mission ul {
+    list-style-type:disc;
+    margin: 10px 0 0 20px;
+    
+}
+
+/* Contact Form */
+
+.contact-form {
+    padding: 2rem;
+    display: flex;
+    justify-content: center
+}
+
+.contact-form h2 {
+    text-align: center;
+}
+
+.contact-form form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #555;
+}
+
+/* Output section */
+#formOutput {
+    margin: 50px;
+    padding: 15px;
+    border: 3px solid black;
+    height: 340px;
+    width: 250px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50px;
+    border-radius: 30% 30% 0 0;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .facilitation {
+        padding: 1rem;
+    }
+
+    .facility {
+        margin: 10px;
+    }
+}
